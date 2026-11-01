@@ -1,0 +1,18 @@
+# Hasil build Arduino
+build/
+*.bin
+*.elf
+*.map
+*.hex
+
+# Editor
+.vscode/
+.idea/
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Rahasia lokal (jika kamu membuat berkas ini sendiri)
+secrets.h
