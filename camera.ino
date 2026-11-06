@@ -4,7 +4,9 @@
 */
 
 bool initCamera() {
-  camera_config_t c;
+  camera_config_t c = {}; //konfigurasi ini harus ada
+  c.sccb_i2c_port = -1;
+  
   c.ledc_channel = LEDC_CHANNEL_0;
   c.ledc_timer   = LEDC_TIMER_0;
   c.pin_d0 = Y2_GPIO_NUM;  c.pin_d1 = Y3_GPIO_NUM;
